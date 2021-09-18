@@ -1,0 +1,59 @@
+{
+  "name": "env",
+  "version": "1.0.0",
+  "description": "",
+  "main": "env-loader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregdaynes/env.git"
+  },
+  "author": "Gregory Daynes <gregdaynes@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gregdaynes/env/issues"
+  },
+  "homepage": "https://github.com/gregdaynes/env#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "dotenv-expand": "^5.1.0",
+    "env-schema": "^3.4.0",
+    "fluent-json-schema": "^3.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "nodemon": "^2.0.12"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "commonjs": true,
+      "es2021": true,
+      "node": true
+    },
+    "extends": [
+      "standard",
+      "prettier"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 12
+    },
+    "rules": {
+      "comma-dangle": [
+        "error",
+        "only-multiline"
+      ]
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}
